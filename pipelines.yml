@@ -48,7 +48,8 @@ pipelines:
                 auto:
                   language: node
                   versions:
-                    - 8.17.0        execution:
+                    - 8.17.0
+        execution:
           onExecute:
             - pushd ./setup/app
             - MODULE="$module" npm run test
